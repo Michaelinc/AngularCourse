@@ -1,0 +1,27 @@
+
+  <table class="egt">
+    <tr>
+      <th>ID</th>
+      <th>USERNAME</th>
+      <th>PASSWORD</th>
+      <th>NAME</th>
+      <th>EMAIL</th>
+    </tr>
+    <tr *ngFor="let item of usr">
+      <td>
+        {{item.id}}
+      </td>
+      <td>
+        {{item.username}}
+      </td>
+      <td>
+        {{item.password}}
+      </td>
+      <td>
+        {{item.name}}
+      </td>
+      <td>
+        {{item.email}}
+      </td>
+    </tr>
+  </table>
