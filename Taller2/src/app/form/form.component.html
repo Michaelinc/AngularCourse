@@ -1,0 +1,38 @@
+<div style="margin-top: 25px;" class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3">
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="40" [(ngModel)]="sendUser.username" pInputText >
+            <label for="float-input">Username</label>
+        </span>
+        <br>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="40" [(ngModel)]="sendUser.password" pInputText>
+            <label for="float-input">Password</label>
+        </span>
+        <br>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="40" [(ngModel)]="sendUser.name" pInputText>
+            <label for="float-input">Name</label>
+        </span>
+        <br>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="40" [(ngModel)]="sendUser.email" pInputText>
+            <label for="float-input">Email</label>
+        </span>
+        <br>
+        <div>
+            <button pButton  type="button" label= "{{label}}" class="ui-button-success" (click) = "sendData()"></button>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-6 ui-lg-9">
+        <form-table [recivedUser] = "data" (editUser) = "recivedData($event)"></form-table>
+    </div>
+    <br>
+</div>
+
+
+
+
+
+
+
